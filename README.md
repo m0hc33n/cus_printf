@@ -2,5 +2,5 @@
 Custom C `printf`
 
 ## todo
-> fprintf
+> fprintf\n
 > sprintf
