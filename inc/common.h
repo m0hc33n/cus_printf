@@ -1,8 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   common.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mamazian <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/02 09:08:32 by mamazian          #+#    #+#             */
+/*   Updated: 2024/11/14 11:49:54 by mamazian         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef COMMON_H
 # define COMMON_H
 
-# include "libft.h"
 # include "defines.h"
 # include <stdarg.h>
 # include <stdlib.h>
@@ -82,6 +92,12 @@ void			di_space_flag(t_format_specifier *pfs, int32_t *pad_len,
 					int32_t origin_len);
 void			check_asterisk(t_format_specifier *pfs, va_list args);
 void			put_u_nbr(uint32_t n, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
+void			*ft_memset(void *b, int c, size_t len);
+char			*ft_strchr(const char *s, int c);
+int				ft_isdigit(int c);
+size_t			ft_strlen(const char *s);
 
 // PADDING THINGS
 int32_t			get_pad_len(t_format_specifier *pfs, int32_t origin_len);
