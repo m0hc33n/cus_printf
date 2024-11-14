@@ -1,6 +1,16 @@
 
 #include "../inc/common.h"
 
+size_t	ft_strlen(const char *s)
+{
+	size_t	len;
+
+	len = 0;
+	while (*(s + len))
+		len++;
+	return (len);
+}
+
 /*
 	# `s specifier` :
 		## truncate the string if the precision is lt the width specified ;
