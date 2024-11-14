@@ -30,22 +30,14 @@ void	get_xp_origin_len(void *nbr, int32_t *len, int32_t type)
 
 void	put_u_nbr(uint32_t n, int fd)
 {
-	uint32_t	nbr;
-
 	if (fd < 0)
 		return ;
-	nbr = n;
-	if (nbr < 0)
-	{
-		ft_putchar_fd(45, fd);
-		nbr = -nbr;
-	}
-	if (nbr <= 9)
-		ft_putchar_fd(nbr + 48, fd);
+	if (n <= 9)
+		ft_putchar_fd(n + 48, fd);
 	else
 	{
-		ft_putnbr_fd(nbr / 10, fd);
-		ft_putchar_fd((nbr % 10) + 48, fd);
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd((n % 10) + 48, fd);
 	}
 }
 
