@@ -1,6 +1,1 @@
-# cus_printf
-Custom C `printf`
-
-## todo
-- fprintf
-- sprintf
+## ft_printf (42Network)
